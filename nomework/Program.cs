@@ -1,5 +1,6 @@
-﻿//Написать программу, которая из имеющегося массива строк формирует массив из строк, 
-//длина которых меньше либо равна 3 символа. 
+﻿//Задача:
+//Написать программу, которая из имеющегося массива строк формирует массив из строк, 
+//длина которых меньше либо равна 3 символам. 
 //Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма. 
 // Примеры ввода [2, hello, sun, 33, world] -> [2, sun, 33]
 
@@ -18,7 +19,8 @@ string[] FindLessThan(string[] input, int n)
 
     for(int i = 0, j = 0; i < input.Length; i++) 
     {
-        if(input[i].Length <= n) {
+        if(input[i].Length <= n) 
+        {
             output[j] = input[i];
             j++;
         }
@@ -31,12 +33,14 @@ int CountLessThan(string[] input, int n)
 {
     int count = 0;
 
-    for(int i = 0; i < input.Length; i++) {
-        if(input[i].Length <= n) {
+    for(int i = 0; i < input.Length; i++) 
+    {
+        if(input[i].Length <= n) 
+        {
             count++;
         }
     }
-
+    
     return count;
 }
 
